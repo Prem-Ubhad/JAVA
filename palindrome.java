@@ -1,5 +1,8 @@
+import java.util.Random;
 class palindrome {
     public static void main(String[] args){
+        Random random = new Random();
+        int num = random.nextInt(1 , 200);
         String s = "LOL";
         int t = s.length();
         boolean p = true;
@@ -17,5 +20,7 @@ class palindrome {
         else{
             System.out.println("This is not a Palindrome");
         }
+        System.out.println(num);
+
     }
 }
