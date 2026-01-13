@@ -1,26 +1,21 @@
-import java.util.Random;
 class palindrome {
-    public static void main(String[] args){
-        Random random = new Random();
-        int num = random.nextInt(1 , 200);
+    public static void main(String[] args) {
+
         String s = "LOL";
         int t = s.length();
         boolean p = true;
-        for(int i=0; i<s.length()/2; i++){
-            
-            if(s.charAt(i)!=s.charAt(t-1)){
+        for (int i = 0; i < s.length() / 2; i++) {
+
+            if (s.charAt(i) != s.charAt(t - 1)) {
                 p = false;
                 break;
             }
             t--;
         }
-        if(p){
+        if (p) {
             System.out.println("This is a Palindrome");
-        }
-        else{
+        } else {
             System.out.println("This is not a Palindrome");
         }
-        System.out.println(num);
-
     }
 }
