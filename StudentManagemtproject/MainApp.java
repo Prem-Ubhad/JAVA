@@ -1,4 +1,4 @@
-package StudentManagemtproject;
+package StudentManagemtProject;
 
 import java.util.Scanner;
 
@@ -14,7 +14,7 @@ public class MainApp {
 			System.out.println("2. View  Student");
 			System.out.println("3. Search Student");
 			System.out.println("4.Delete Student");
-			System.out.println("5 Exit");
+			System.out.println("5. Exit");
 			
 			
 			System.out.println("Choose option: ");
@@ -25,14 +25,14 @@ public class MainApp {
 				System.out.print("Enter Id: ");
 				int id = sc.nextInt();
 				
-				System.out.print("Enter Nmae: ");
-				String name = sc.next();
+				System.out.print("Enter Name: ");
+				String name = sc.nextLine();
 				
 				System.out.print("Enter Age: ");
 				int age = sc.nextInt();
 				
 				System.out.print("Enter Course: ");
-				String course = sc.next();
+				String course = sc.nextLine();
 				
 				Student s = new Student(id,name,age,course);
 				service.addStudent(s);
@@ -60,14 +60,13 @@ public class MainApp {
 				
 			case 5:
 				System.out.println("Thank You!");
-				System.exit(0);
+				sc.close();
+				return;
 				
 				default:
 					System.out.println("Invalid choice");
 				
 			}
 		}
-
 	}
-
 }

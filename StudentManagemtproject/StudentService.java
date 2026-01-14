@@ -1,4 +1,4 @@
-package StudentManagemtproject;
+package StudentManagemtProject;
 
 import java.util.ArrayList;
 

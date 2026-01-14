@@ -1,4 +1,4 @@
-package StudentManagemtproject;
+package StudentManagemtProject;
 
 public class Student {
 	
