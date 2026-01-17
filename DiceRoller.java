@@ -24,6 +24,7 @@ public class DiceRoller {
         else{
             System.out.println("No. of Dice cannot be NEGATIVE!");
         }
+        scanner.close();
     } 
     
         static void PrintDie(int roll){
