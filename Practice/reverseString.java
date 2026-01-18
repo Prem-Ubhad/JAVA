@@ -1,3 +1,4 @@
+package Practice;
 class reverseString {
     public static void main(String[] args){
         String s = "Lara Dutta";

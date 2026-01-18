@@ -1,3 +1,4 @@
+package Practice;
 class reverseArray {
     public static void main(String[] args){
         int[] arr = {10,30,20,25,50}; 
